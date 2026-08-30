@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- @author Kat Glass, Glass Resume, Portfolio Page
-Southern Illinois University  Developed: 2-03-2026  Tested: 2-03-2026  
+Southern Illinois University  Developed: 8-25-2026  Tested: 8-30-2026  
 -->
 <html lang="en">
     <head>
@@ -24,41 +24,66 @@ Southern Illinois University  Developed: 2-03-2026  Tested: 2-03-2026
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
             }); 
         </script>
-        <meta name="description" content="Resume"> <meta name="keywords" content="Portfolio, resume, Kat Glass">
+        <meta name="description" content="Kat Glass, personal portfolio, resume"> <meta name="keywords" content="Kat Glass, personal portfolio, resume">
     </head>
     <body>   
-        <header>
-            <div class="bluetouch"><img src="images/image.png" alt="PP Logo" width="500px"></div>
-        </header> 
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.htm" class="current">Home</a></li>
-                <li><a href="education.htm">Education</a></li>
-                <li><a href="interests.htm">Interests</a></li>
-                <li><a href="occupation.htm">Occupation</a></li>
-                <li><a href="contact.htm" class="lastitem">Contact</a></li>
-            </ul> 
-        </nav>
-        <h1>Kat Glass's</h1>
-        <h2>Experience & Research Interests</h2>
-        <p>This site is about my work and experience</p>
-        <blockquote>Work Experience, Education, Research Interests</blockquote>
-        <ol>
-            <li>Programming</li>
-            <li>Database</li>
-            <li>AI and ML</li>
-        </ol>
-        <a href="https://www.siu.edu">WWW.SIU.EDU</a>
-        <p>How to contact Kat Glass &amp; Staff:</p> <address>1-800-aaa-xxxx<br>
-        <a href="emailto:owner@pp.com">owner@katglass.gitub.com</a> </address>
-        <pre>
-My Address:
-Kat Glass
-1263 Lincoln drive
-Carbondale, IL
-62901
-        </pre>
+        <main>
+            <header>
+                <div class="bluetouch"><img src="images/image.png" alt="PP Logo" width="500px"></div>
+            </header> 
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.htm" class="current"><em>Home</em></a></li>
+                    <li><a href="education.htm">Education</a></li>
+                    <li><a href="interests.htm">Interests</a></li>
+                    <li><a href="occupation.htm">Occupation</a></li>
+                    <li><a href="contact.htm" class="lastitem">Contact</a></li>
+                </ul>
+            <!--Dividing line to separate the navigation menu from the page contents-->
+            <hr> 
+            </nav>
+            <h1>Kat Glass's</h1>
+            <h2>Personal Portfolio</h2>
+            <p>This site is about my <strong>work and experience</strong></p>
+            <blockquote>Research Interests:</blockquote>
+            <ol>
+                <li>Programming</li>
+                <li>Database</li>
+                <li>AI and ML</li>
+            </ol>
+            <blockquote>Work Experience:</blockquote>
+            <!--Description list of work history-->
+                <dl>
+                    <dt>Job 1</dt>
+                    <dd>Desc</dd>
+                    <dt>Job 2</dt>
+                    <dd>Desc</dd>
+                    <dt>Job 3</dt>
+                    <dd>Desc</dd>
+                </dl>
+            <!--Contact information including LinkedIn profile-->
+            <a href="https://www.siu.edu">WWW.SIU.EDU</a>
+            <p>How to contact Kat Glass:</p> <address>1-800-aaa-xxxx<br>
+            <a href="emailto:katglass73@gmail.com">katglass73@gmail.com</a> </address>
+            <a href="https://www.linkedin.com/in/kat-glass">LinkedIn Profile</a>
+            <pre>
+
+    My Address:
+    Kat Glass
+    1263 Lincoln drive
+    Carbondale, IL
+    62901
+            </pre>
+            <button command="show-modal" commandfor="my-popup">Read Me</button>
+        </main>
+
+        <!--Dialog pop-up to indicate that the site is incomplete-->
+        <dialog id="my-popup">
+            <h2>This site is under construction</h2>
+            <p>Some information may be incorrect or outdated.</p>
+            <button commandfor="my-popup" command="Close">Close</button>
+        </dialog>
     </body>
 
 </html>
